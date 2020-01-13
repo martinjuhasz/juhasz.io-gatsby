@@ -1,0 +1,40 @@
+{
+  "name": "juhasz.io",
+  "version": "0.0.1",
+  "description": "Personal Website of Martin Juhasz, Software Crafter",
+  "author": {
+    "name": "Martin Juhasz",
+    "email": "martin@juhasz.io"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "gatsby": "^2.4.3",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-hook-form": "^4.4.8"
+  },
+  "scripts": {
+    "start": "gatsby clean && gatsby develop",
+    "develop": "gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "serve": "gatsby serve",
+    "clean": "rm -rf .cache public",
+    "format": "prettier --write '**/*.js'"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  },
+  "keywords": [
+    "Martin Juhasz",
+    "Software Crafter",
+    "Developer"
+  ],
+  "license": "MIT",
+  "homepage": "https://juhasz.io"
+}
