@@ -1,5 +1,3 @@
-
-
 /* Banner */
 
 #banner {
@@ -15,8 +13,8 @@
   }
 
   .logo {
-    @include vendor('transition', ('opacity 2s ease', 'transform 1s ease'));
-    @include vendor('transform', 'translateY(0)');
+    @include vendor("transition", ("opacity 2s ease", "transform 1s ease"));
+    @include vendor("transform", "translateY(0)");
     opacity: 1;
     margin: 0 0 (_size(element-margin) * 0.65) 0;
 
@@ -33,12 +31,12 @@
 
   h2 {
     @include vendor(
-      'transition',
-      ('opacity 0.5s ease', 'transform 0.5s ease', 'filter 0.25s ease')
+      "transition",
+      ("opacity 0.5s ease", "transform 0.5s ease", "filter 0.25s ease")
     );
-    @include vendor('transform', 'translateX(0)');
-    @include vendor('transition-delay', '0.65s');
-    @include vendor('filter', 'blur(0)');
+    @include vendor("transform", "translateX(0)");
+    @include vendor("transition-delay", "0.65s");
+    @include vendor("filter", "blur(0)");
     opacity: 1;
     font-size: 2.25em;
     margin-left: 1em;
@@ -48,12 +46,12 @@
 
   p {
     @include vendor(
-      'transition',
-      ('opacity 0.5s ease', 'transform 0.5s ease', 'filter 0.25s ease')
+      "transition",
+      ("opacity 0.5s ease", "transform 0.5s ease", "filter 0.25s ease")
     );
-    @include vendor('transform', 'translateX(0)');
-    @include vendor('transition-delay', '0.8s');
-    @include vendor('filter', 'blur(0)');
+    @include vendor("transform", "translateX(0)");
+    @include vendor("transition-delay", "0.8s");
+    @include vendor("filter", "blur(0)");
     opacity: 1;
     font-family: _font(family-heading);
     font-size: 1em;
@@ -65,7 +63,7 @@
     padding-top: 1.75em;
   }
 
-  @include breakpoint('<=large') {
+  @include breakpoint("<=large") {
     @include padding(6em, 0, (0, 0, _size(wrapper-edges, large) * 0.5, 0));
 
     background-color: _palette(bg);
@@ -75,7 +73,7 @@
         transparentize(_palette(bg), 0.2),
         transparentize(_palette(bg), 0.2)
       ),
-      url('../images/bg.jpg');
+      url("../images/bg.jpg");
 
     background-size: auto, cover;
 
@@ -84,7 +82,7 @@
     margin-bottom: (_size(wrapper-edges, large) * -1);
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     @include padding(6em, 3em, (0, 0, _size(wrapper-edges, medium) * 0.5, 0));
 
     margin-bottom: (_size(wrapper-edges, medium) * -1);
@@ -94,7 +92,7 @@
     }
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     @include padding(5em, 2em, (0, 0, _size(wrapper-edges, small) * 0.5, 0));
 
     margin-bottom: (_size(wrapper-edges, small) * -1);
@@ -119,20 +117,20 @@
   .main-body.is-preload &,
   body.is-preload & {
     .logo {
-      @include vendor('transform', 'translateY(0.5em)');
+      @include vendor("transform", "translateY(0.5em)");
       opacity: 0;
     }
 
     h2 {
       opacity: 0;
-      @include vendor('transform', 'translateX(0.25em)');
-      @include vendor('filter', 'blur(2px)');
+      @include vendor("transform", "translateX(0.25em)");
+      @include vendor("filter", "blur(2px)");
     }
 
     p {
       opacity: 0;
-      @include vendor('transform', 'translateX(0.5em)');
-      @include vendor('filter', 'blur(2px)');
+      @include vendor("transform", "translateX(0.5em)");
+      @include vendor("filter", "blur(2px)");
     }
   }
 }

@@ -1,9 +1,8 @@
-
-
 /* Section/Article */
 
-	section, article {
-		&.special {
-			text-align: center;
-		}
-	}
+section,
+article {
+  &.special {
+    text-align: center;
+  }
+}

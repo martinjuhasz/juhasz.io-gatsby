@@ -1,19 +1,17 @@
-
-
 /* Menu */
 
 #page-wrapper {
-  @include vendor('transition', 'filter 0.25s ease');
+  @include vendor("transition", "filter 0.25s ease");
 }
 
 #menu {
-  @include vendor('align-items', 'center');
-  @include vendor('display', 'flex');
-  @include vendor('justify-content', 'center');
-  @include vendor('pointer-events', 'none');
+  @include vendor("align-items", "center");
+  @include vendor("display", "flex");
+  @include vendor("justify-content", "center");
+  @include vendor("pointer-events", "none");
   @include vendor(
-    'transition',
-    ('opacity #{_duration(menu)} ease', 'visibility #{_duration(menu)}')
+    "transition",
+    ("opacity #{_duration(menu)} ease", "visibility #{_duration(menu)}")
   );
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -34,10 +32,10 @@
 
   .inner {
     @include padding(2.5em, 1.5em);
-    @include vendor('transform', 'translateY(0.5em)');
+    @include vendor("transform", "translateY(0.5em)");
     @include vendor(
-      'transition',
-      ('opacity #{_duration(menu)} ease', 'transform #{_duration(menu)} ease')
+      "transition",
+      ("opacity #{_duration(menu)} ease", "transform #{_duration(menu)} ease")
     );
     -webkit-overflow-scrolling: touch;
     background: _palette(accent);
@@ -55,12 +53,12 @@
   }
 
   .close {
-    background-image: url('../images/close.svg');
+    background-image: url("../images/close.svg");
     background-position: 75% 25%;
     background-repeat: no-repeat;
     background-size: 2em 2em;
     border: 0;
-    content: '';
+    content: "";
     display: block;
     height: 4em;
     overflow: hidden;
@@ -99,7 +97,7 @@
     }
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     .inner {
       max-height: 100%;
       overflow-y: auto;
@@ -115,16 +113,16 @@
 .main-body {
   .is-menu-visible {
     #page-wrapper {
-      @include vendor('filter', 'blur(1.5px)');
+      @include vendor("filter", "blur(1.5px)");
     }
 
     #menu {
-      @include vendor('pointer-events', 'auto');
+      @include vendor("pointer-events", "auto");
       opacity: 1;
       visibility: visible;
 
       .inner {
-        @include vendor('transform', 'translateY(0)');
+        @include vendor("transform", "translateY(0)");
         opacity: 1;
       }
     }

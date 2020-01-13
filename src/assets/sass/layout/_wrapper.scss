@@ -1,5 +1,3 @@
-
-
 /* Wrapper */
 
 /// Sets the colors of the wrapper's top/bottom edges.
@@ -51,7 +49,7 @@
     }
   }
 
-  @include breakpoint('<=large') {
+  @include breakpoint("<=large") {
     > header {
       @include padding(5em, 0, (4em, 0, _size(wrapper-edges, large) * 0.5, 0));
 
@@ -62,7 +60,7 @@
           transparentize(_palette(bg), 0.2),
           transparentize(_palette(bg), 0.2)
         ),
-        url('../images/bg.jpg');
+        url("../images/bg.jpg");
 
       background-size: auto, cover;
 
@@ -72,7 +70,7 @@
     }
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     > header {
       @include padding(
         7em,
@@ -92,7 +90,7 @@
     }
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     > header {
       @include padding(
         3.75em,
@@ -125,7 +123,7 @@
   &:after {
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    content: '';
+    content: "";
     display: block;
     height: _size(wrapper-edges, large);
     position: absolute;
@@ -138,18 +136,18 @@
   }
 
   &:after {
-    @include vendor('transform', 'scaleY(-1)');
+    @include vendor("transform", "scaleY(-1)");
     bottom: (_size(wrapper-edges, large) * -1);
     left: 0;
   }
 
   &.alt {
     &:before {
-      @include vendor('transform', 'scaleX(-1)');
+      @include vendor("transform", "scaleX(-1)");
     }
 
     &:after {
-      @include vendor('transform', 'scaleY(-1) scaleX(-1)');
+      @include vendor("transform", "scaleY(-1) scaleX(-1)");
     }
   }
 
@@ -174,9 +172,9 @@
     background-color: _palette(accent);
 
     .inner {
-      @include vendor('display', 'flex');
-      @include vendor('align-items', 'center');
-      @include vendor('flex-direction', 'row');
+      @include vendor("display", "flex");
+      @include vendor("align-items", "center");
+      @include vendor("flex-direction", "row");
     }
 
     .image {
@@ -199,7 +197,7 @@
 
     &:nth-child(2n - 1) {
       .inner {
-        @include vendor('flex-direction', 'row-reverse');
+        @include vendor("flex-direction", "row-reverse");
         text-align: right;
       }
 
@@ -219,7 +217,7 @@
     }
   }
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     margin: _size(wrapper-edges, medium) 0;
 
     &:before,
@@ -255,7 +253,7 @@
     }
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     margin: _size(wrapper-edges, small) 0;
 
     &:before,
@@ -278,7 +276,7 @@
 
     &.spotlight {
       .inner {
-        @include vendor('align-items', 'flex-start');
+        @include vendor("align-items", "flex-start");
       }
 
       .image {
@@ -294,7 +292,7 @@
     }
   }
 
-  @include breakpoint('<=xsmall') {
+  @include breakpoint("<=xsmall") {
     &.spotlight {
       .inner {
         display: block;
@@ -308,7 +306,7 @@
     }
   }
 
-  @include breakpoint('<=xxsmall') {
+  @include breakpoint("<=xxsmall") {
     .inner {
       @include padding(2em, 1.5em);
     }
