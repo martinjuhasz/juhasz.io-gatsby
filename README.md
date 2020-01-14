@@ -11,4 +11,5 @@ Personal Website of Martin Juhasz, Software Crafter
 ## Resources
 
 - [GatsbyJS](https://www.gatsbyjs.org/)
-- [GatsbyJS Solidstate] as base Template (https://appseed.us/apps/gatsbyjs/gatsby-html5up-solidstate)
+- [GatsbyJS Solidstate](https://appseed.us/apps/gatsbyjs/gatsby-html5up-solidstate)
+  as base Template
