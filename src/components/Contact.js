@@ -11,7 +11,7 @@ export const Contact = () => {
 
 	const onSubmit = handleSubmit(async data => {
 		setRequestErrored(false)
-		const request = await fetch(process.env.CONTACT_API_URL, {
+		const request = await fetch(process.env.GATSBY_CONTACT_API_URL, {
 			method: 'POST',
 			mode: 'cors',
 			cache: 'no-cache',
