@@ -7,7 +7,7 @@ import profilePicture from '../assets/images/profile.jpg'
 import servicesPicture from '../assets/images/services.jpg'
 import vitaPicture from '../assets/images/vita.jpg'
 import watchedPicture from '../assets/images/watched.jpg'
-import storyboardPicture from '../assets/images/Storyboard.jpg'
+import storyboardPicture from '../assets/images/storyboard.jpg'
 
 import config from '../../config'
 const IndexPage = () => (
