@@ -13,3 +13,5 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
+        env:
+          GATSBY_CONTACT_API_URL: ${{ secrets.GATSBY_CONTACT_API_URL }}
