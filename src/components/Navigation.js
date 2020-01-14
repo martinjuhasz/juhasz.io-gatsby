@@ -8,22 +8,12 @@ export const Navigation = ({ onMenuToggle = () => {} }) => {
 				<h2>Menu</h2>
 				<ul className="links">
 					<li>
-						<Link
-							onClick={e => {
-								onMenuToggle()
-							}}
-							to="/"
-						>
+						<Link onClick={onMenuToggle} to="/">
 							Home
 						</Link>
 					</li>
 					<li>
-						<Link
-							onClick={e => {
-								onMenuToggle()
-							}}
-							to="/impressum"
-						>
+						<Link onClick={onMenuToggle} to="/impressum">
 							Impressum
 						</Link>
 					</li>
