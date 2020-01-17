@@ -22,6 +22,16 @@ export const Navigation = ({ onMenuToggle = () => {} }) => {
 							onClick={() => {
 								onMenuToggle()
 							}}
+							to="/blog"
+						>
+							Blog
+						</Link>
+					</li>
+					<li>
+						<Link
+							onClick={() => {
+								onMenuToggle()
+							}}
 							to="/impressum"
 						>
 							Impressum

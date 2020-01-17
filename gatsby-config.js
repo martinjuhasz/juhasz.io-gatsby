@@ -19,6 +19,14 @@ module.exports = {
 				icon: config.manifestIcon,
 			},
 		},
+		'gatsby-transformer-remark',
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `posts`,
+				path: `${__dirname}/src/posts`,
+			},
+		},
 		'gatsby-plugin-sass',
 		'gatsby-plugin-offline',
 	],
