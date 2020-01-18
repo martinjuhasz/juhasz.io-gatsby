@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout'
 
 export const AllPostsQuery = graphql`
 	query AllBlogPosts {
-		allMarkdownRemark {
+		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
 			edges {
 				node {
 					frontmatter {
