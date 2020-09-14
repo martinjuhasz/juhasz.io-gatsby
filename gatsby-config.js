@@ -27,6 +27,8 @@ module.exports = {
 				path: `${__dirname}/src/posts`,
 			},
 		},
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-sharp`,
 		'gatsby-plugin-sass',
 		'gatsby-plugin-offline',
 	],

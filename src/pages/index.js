@@ -22,6 +22,13 @@ export const latestPostsQuery = graphql`
 						title
 						description
 						path
+						featuredImage {
+							childImageSharp {
+								fluid(maxWidth: 800) {
+									src
+								}
+							}
+						}
 					}
 				}
 			}
@@ -163,7 +170,12 @@ const IndexPage = ({ data }) => {
 						</p>
 						<section className="features">
 							{data.allMarkdownRemark.edges.map(post => {
-								const { title, description, path } = post.node.frontmatter
+								const {
+									title,
+									description,
+									path,
+									image,
+								} = post.node.frontmatter
 
 								return (
 									<article key={`${path}`}>
