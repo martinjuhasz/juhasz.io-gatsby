@@ -88,7 +88,7 @@ const IndexPage = () => (
 							deeper into the topics of computer science.
 						</p>
 						<p>
-							Therefore I studied computer science at the RheimMain University
+							Therefore I studied computer science at the RheinMain University
 							of Applied Sciences and graduated in 2016. Since then I've been
 							working as an employee as well as a freelancer.
 						</p>
