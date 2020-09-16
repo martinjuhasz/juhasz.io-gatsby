@@ -28,7 +28,7 @@
     "format": "prettier --write '**/*.{js,ts,scss}'"
   },
   "devDependencies": {
-    "prettier": "2.1.1"
+    "prettier": "2.1.2"
   },
   "keywords": [
     "Martin Juhasz",
